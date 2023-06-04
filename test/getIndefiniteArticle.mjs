@@ -1,4 +1,4 @@
-import { getIndefiniteArticle } from '../index.mjs';
+import { getIndefiniteArticle } from '../dtrt-string-utils.mjs';
 
 QUnit.module('getIndefiniteArticle');
 

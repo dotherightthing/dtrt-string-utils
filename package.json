@@ -2,7 +2,7 @@
   "name": "dtrt-string-utils",
   "version": "1.0.0",
   "description": "String utilities",
-  "main": "index.mjs",
+  "main": "dtrt-string-utils.mjs",
   "scripts": {
     "lint": "npx eslint ./**/*.mjs",
     "test": "qunit test/*.mjs"

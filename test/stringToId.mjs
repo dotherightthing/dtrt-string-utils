@@ -1,4 +1,4 @@
-import { stringToId } from '../index.mjs';
+import { stringToId } from '../dtrt-string-utils.mjs';
 
 QUnit.module('stringToId');
 

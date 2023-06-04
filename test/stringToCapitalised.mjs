@@ -1,4 +1,4 @@
-import { stringToCapitalised } from '../index.mjs';
+import { stringToCapitalised } from '../dtrt-string-utils.mjs';
 
 QUnit.module('stringToCapitalised');
 
