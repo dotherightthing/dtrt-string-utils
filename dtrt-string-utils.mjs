@@ -1,5 +1,5 @@
 /**
- * @file index.js
+ * @file dtrt-string-utils.js
  */
 
 /**
