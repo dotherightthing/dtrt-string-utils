@@ -4,7 +4,7 @@
   "description": "String utilities",
   "main": "dtrt-string-utils.mjs",
   "scripts": {
-    "lint": "npx eslint ./**/*.mjs",
+    "lint": "npx eslint ./*.mjs ./**/*.mjs",
     "test": "qunit test/*.mjs"
   },
   "repository": {
