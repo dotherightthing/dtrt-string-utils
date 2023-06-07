@@ -1,6 +1,6 @@
 {
   "name": "dtrt-string-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "String utilities",
   "main": "dtrt-string-utils.mjs",
   "type": "module",
