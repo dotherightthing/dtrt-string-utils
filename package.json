@@ -1,8 +1,16 @@
 {
   "name": "dtrt-string-utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "String utilities",
   "main": "dtrt-string-utils.mjs",
+  "type": "module",
+  "exports": {
+    "import": "./dist/dtrt-string-utils.mjs",
+    "require": "./dist/dtrt-string-utils.cjs"
+  },
+  "engines": {
+    "node": ">=13.7.0"
+  },
   "scripts": {
     "dist": "./scripts/dist.sh",
     "lint": "npx eslint ./src/*.mjs",

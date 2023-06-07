@@ -9,8 +9,8 @@ npm install dotherightthing/dtrt-string-utils
 ```
 
 ```js
-import dtrtStringUtils from 'dtrt-string-utils/dist/dtrt-string-utils.mjs'; // ESM
-const dtrtStringUtils = require('dtrt-string-utils/dist/dtrt-string-utils.cjs'); // CommonJS
+import dtrtStringUtils from 'dtrt-string-utils'; // ESM
+const dtrtStringUtils = require('dtrt-string-utils'); // CommonJS
 
 // Get the appropriate indefinite article for the specified string
 const appleArt = dtrtStringUtils.getIndefiniteArticle('apple'); // an
