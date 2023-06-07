@@ -1,10 +1,10 @@
-import { stringToCapitalised } from '../dtrt-string-utils.mjs';
+import dtrtStringUtils from '../src/dtrt-string-utils.mjs';
 
 QUnit.module('stringToCapitalised');
 
 QUnit.test('phrase', (assert) => {
   assert.equal(
-    stringToCapitalised('foo bar baz'),
+    dtrtStringUtils.stringToCapitalised('foo bar baz'),
     'Foo bar baz',
     'Capitalise string',
   );
@@ -12,7 +12,7 @@ QUnit.test('phrase', (assert) => {
 
 QUnit.test('word', (assert) => {
   assert.equal(
-    stringToCapitalised('foo'),
+    dtrtStringUtils.stringToCapitalised('foo'),
     'Foo',
     'Capitalise string',
   );

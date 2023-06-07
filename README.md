@@ -9,21 +9,18 @@ npm install dotherightthing/dtrt-string-utils
 ```
 
 ```js
-import {
-  getIndefiniteArticle,
-  stringToCapitalised,
-  stringToId,
-} from 'dtrt-string-utils';
+import dtrtStringUtils from 'dtrt-string-utils/dist/dtrt-string-utils.mjs'; // ESM
+const dtrtStringUtils = require('dtrt-string-utils/dist/dtrt-string-utils.cjs'); // CommonJS
 
 // Get the appropriate indefinite article for the specified string
-const appleArt = getIndefiniteArticle('apple'); // an
-const busArt = getIndefiniteArticle('bus'); // a
+const appleArt = dtrtStringUtils.getIndefiniteArticle('apple'); // an
+const busArt = dtrtStringUtils.getIndefiniteArticle('bus'); // a
 
 // Capitalise a string
-const appleCap = stringToCapitalised('apple'); // Apple
+const appleCap = dtrtStringUtils.stringToCapitalised('apple'); // Apple
 
 // Convert a string into a form safe for use as an HTML id attribute
-const id = stringToId('file A.js,"file B.txt'); // file-a-js-file-b-txt
+const id = dtrtStringUtils.stringToId('file A.js,"file B.txt'); // file-a-js-file-b-txt
 ```
 
 ## Tests

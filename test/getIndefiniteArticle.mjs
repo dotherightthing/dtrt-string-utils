@@ -1,142 +1,142 @@
-import { getIndefiniteArticle } from '../dtrt-string-utils.mjs';
+import dtrtStringUtils from '../src/dtrt-string-utils.mjs';
 
 QUnit.module('getIndefiniteArticle');
 
 QUnit.test('starts with a consonant', (assert) => {
   assert.equal(
-    getIndefiniteArticle('banana'),
+    dtrtStringUtils.getIndefiniteArticle('banana'),
     'a',
   );
 
   assert.equal(
-    getIndefiniteArticle('canape'),
+    dtrtStringUtils.getIndefiniteArticle('canape'),
     'a',
   );
 
   assert.equal(
-    getIndefiniteArticle('cherry'),
+    dtrtStringUtils.getIndefiniteArticle('cherry'),
     'a',
   );
 
   assert.equal(
-    getIndefiniteArticle('date'),
+    dtrtStringUtils.getIndefiniteArticle('date'),
     'a',
   );
 
   assert.equal(
-    getIndefiniteArticle('feijoa'),
+    dtrtStringUtils.getIndefiniteArticle('feijoa'),
     'a',
   );
 
   assert.equal(
-    getIndefiniteArticle('grape'),
+    dtrtStringUtils.getIndefiniteArticle('grape'),
     'a',
   );
 
   assert.equal(
-    getIndefiniteArticle('herb'),
+    dtrtStringUtils.getIndefiniteArticle('herb'),
     'a',
   );
 
   assert.equal(
-    getIndefiniteArticle('jackfruit'),
+    dtrtStringUtils.getIndefiniteArticle('jackfruit'),
     'a',
   );
 
   assert.equal(
-    getIndefiniteArticle('kiwifruit'),
+    dtrtStringUtils.getIndefiniteArticle('kiwifruit'),
     'a',
   );
 
   assert.equal(
-    getIndefiniteArticle('lemon'),
+    dtrtStringUtils.getIndefiniteArticle('lemon'),
     'a',
   );
 
   assert.equal(
-    getIndefiniteArticle('merringue'),
+    dtrtStringUtils.getIndefiniteArticle('merringue'),
     'a',
   );
 
   assert.equal(
-    getIndefiniteArticle('nut'),
+    dtrtStringUtils.getIndefiniteArticle('nut'),
     'a',
   );
 
   assert.equal(
-    getIndefiniteArticle('peanut'),
+    dtrtStringUtils.getIndefiniteArticle('peanut'),
     'a',
   );
 
   assert.equal(
-    getIndefiniteArticle('quince'),
+    dtrtStringUtils.getIndefiniteArticle('quince'),
     'a',
   );
 
   assert.equal(
-    getIndefiniteArticle('radish'),
+    dtrtStringUtils.getIndefiniteArticle('radish'),
     'a',
   );
 
   assert.equal(
-    getIndefiniteArticle('strawberry'),
+    dtrtStringUtils.getIndefiniteArticle('strawberry'),
     'a',
   );
 
   assert.equal(
-    getIndefiniteArticle('tomato'),
+    dtrtStringUtils.getIndefiniteArticle('tomato'),
     'a',
   );
 
   assert.equal(
-    getIndefiniteArticle('vanilla pod'),
+    dtrtStringUtils.getIndefiniteArticle('vanilla pod'),
     'a',
   );
 
   assert.equal(
-    getIndefiniteArticle('wine'),
+    dtrtStringUtils.getIndefiniteArticle('wine'),
     'a',
   );
 
   assert.equal(
-    getIndefiniteArticle('xmas cake'),
+    dtrtStringUtils.getIndefiniteArticle('xmas cake'),
     'a',
   );
 
   assert.equal(
-    getIndefiniteArticle('yam'),
+    dtrtStringUtils.getIndefiniteArticle('yam'),
     'a',
   );
 
   assert.equal(
-    getIndefiniteArticle('zucchini'),
+    dtrtStringUtils.getIndefiniteArticle('zucchini'),
     'a',
   );
 });
 
 QUnit.test('starts with a vowel', (assert) => {
   assert.equal(
-    getIndefiniteArticle('apple'),
+    dtrtStringUtils.getIndefiniteArticle('apple'),
     'an',
   );
 
   assert.equal(
-    getIndefiniteArticle('egg'),
+    dtrtStringUtils.getIndefiniteArticle('egg'),
     'an',
   );
 
   assert.equal(
-    getIndefiniteArticle('ice-cream'),
+    dtrtStringUtils.getIndefiniteArticle('ice-cream'),
     'an',
   );
 
   assert.equal(
-    getIndefiniteArticle('omlette'),
+    dtrtStringUtils.getIndefiniteArticle('omlette'),
     'an',
   );
 
   assert.equal(
-    getIndefiniteArticle('umbrella'),
+    dtrtStringUtils.getIndefiniteArticle('umbrella'),
     'an',
   );
 });

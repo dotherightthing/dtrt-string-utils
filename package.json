@@ -1,10 +1,12 @@
 {
   "name": "dtrt-string-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "String utilities",
   "main": "dtrt-string-utils.mjs",
   "scripts": {
-    "lint": "npx eslint ./*.mjs ./**/*.mjs",
+    "dist": "./scripts/dist.sh",
+    "lint": "npx eslint ./src/*.mjs",
+    "prepare": "husky install",
     "test": "qunit test/*.mjs"
   },
   "repository": {
@@ -21,6 +23,7 @@
     "eslint": "^8.42.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-jsdoc": "^46.2.2",
+    "husky": "^8.0.3",
     "qunit": "^2.19.4"
   }
 }

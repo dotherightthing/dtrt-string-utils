@@ -1,5 +1,5 @@
 /**
- * @file dtrt-string-utils.js
+ * @file dtrt-string-utils.mjs
  */
 
 /**
@@ -8,7 +8,7 @@
  * @param {string} str - String
  * @returns {string} indefiniteArticle
  */
-export const getIndefiniteArticle = (str) => {
+const getIndefiniteArticle = (str) => {
   const firstLetter = str.slice(0, 1).toLowerCase();
   const strLower = str.toLowerCase();
 
@@ -27,7 +27,7 @@ export const getIndefiniteArticle = (str) => {
  * @param {string} str - String to convert
  * @returns {string} capitalisedStr
  */
-export const stringToCapitalised = (str) => {
+const stringToCapitalised = (str) => {
   if (typeof str !== 'string') {
     return '';
   }
@@ -41,7 +41,7 @@ export const stringToCapitalised = (str) => {
  * @param {string} str - String to convert
  * @returns {string} safeStr
  */
-export const stringToId = (str) => {
+const stringToId = (str) => {
   if (typeof str !== 'string') {
     return '';
   }
@@ -62,4 +62,10 @@ export const stringToId = (str) => {
   }
 
   return safeStr;
+};
+
+export default {
+  getIndefiniteArticle,
+  stringToCapitalised,
+  stringToId,
 };
